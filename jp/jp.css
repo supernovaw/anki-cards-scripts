@@ -1,0 +1,79 @@
+.jp-hide-before-loaded {
+    visibility: hidden;
+}
+
+.card-title-jp {
+    font-size: 3em;
+}
+
+.hide-furigana rt {
+    visibility: hidden;
+}
+
+.fade-in-furigana rt {
+    animation: fade-in var(--fade-in-time) ease-out 0ms 1 normal both;
+}
+
+.kanji-static,
+.kanji-animated {
+    line-height: 1.05;
+    font-size: 5em;
+    width: 1em;
+    height: 1em;
+    margin: auto;
+    display: block;
+}
+
+.nanori {
+    font-size: 65%;
+}
+
+.radicals-table,
+.radicals {
+    font-size: 70%;
+}
+
+.radicals-table td:last-child {
+    text-align: start;
+    border-inline-start: 8px solid transparent;
+}
+
+.kanji-use-examples tr td:first-child {
+    text-align: end;
+}
+
+.kanji-use-examples tr td:last-child {
+    text-align: start;
+    border-inline-start: 10px solid transparent;
+}
+
+.part-of-speech {
+    font-size: 60%;
+    opacity: 0.5;
+    margin-bottom: 2em;
+}
+
+.part-of-speech-abbr {
+    font-size: 80%;
+    opacity: 0.8;
+}
+
+table.word-kanji {
+    margin-bottom: 1em;
+}
+
+table.word-kanji canvas.kanji-animated {
+    font-size: 2em;
+}
+
+table.word-kanji .table-kanji-info {
+    font-size: 50%;
+}
+
+table.word-kanji .details-column {
+    font-size: 70%;
+}
+
+table.word-kanji td {
+    padding: .4em;
+}

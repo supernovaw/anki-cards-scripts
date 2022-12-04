@@ -1,0 +1,24 @@
+#qa {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    min-height: calc(100% - 64px);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.expansible-answer {
+    opacity: 1;
+    transition: 200ms ease-out;
+    overflow: hidden;
+    max-height: none;
+}
+
+.expansible-answer:not(.expanded) {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}

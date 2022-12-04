@@ -1,0 +1,52 @@
+body {
+    --fade-in-time: .3s;
+    --background-fill-alpha: 0.8;
+    background-color: rgba(255, 255, 255, var(--background-fill-alpha));
+    background-image: url('./bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+
+html.linux body::-webkit-scrollbar,
+html.win body::-webkit-scrollbar {
+    display: none;
+}
+
+body.night_mode {
+    background-color: rgba(0, 0, 0, var(--background-fill-alpha));
+}
+
+.card {
+    font-family: 'SF UI Display', 'SF Pro Text', 'Roboto', 'Ubuntu', 'Yu Gothic', 'Myriad Pro', arial;
+    font-size: 20px;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.card-title {
+    font-size: 2em;
+}
+
+.fade-in {
+    animation: fade-in var(--fade-in-time) ease-out 0ms 1 normal both;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
